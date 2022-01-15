@@ -228,7 +228,7 @@ footer .contacts span.fab:hover {
 }
 /* footer section ends here */
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 414px) {
   .main-container {
     width: auto;
     max-width: fit-content;
