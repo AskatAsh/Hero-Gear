@@ -22,8 +22,10 @@ a {
 }
 header {
   display: flex;
-  justify-content: space-between;
-  padding: 70px 70px 50px 70px;
+  /* justify-content: space-between; */
+  padding: 60px 70px;
+  align-items: center;
+  justify-content: center;
 }
 .menu-icon {
   display: none;
@@ -57,11 +59,10 @@ header {
 /* first section with title paragraph button and image */
 .container-2 {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.left-section {
-  margin-left: 85px;
-}
-h1.heading-1 {
+.left-section > h1.heading-1 {
   font-family: "Source Serif 4", sans-serif;
   width: 582px;
   height: 133px;
@@ -72,7 +73,7 @@ h1.heading-1 {
   color: #3a3a3a;
   margin-top: 80px;
 }
-P.para-1 {
+.left-section > .para-1 {
   width: 582px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -112,25 +113,41 @@ button.first-btn:hover .fa-arrow-right {
   color: #377cbb;
 }
 /* left section ends here */
+
 .right-section {
   margin-left: 55px;
   margin-top: 10px;
 }
 /* first section ends here */
 /* ======================= */
-/* second section begins here */
-h2.heading-2 {
+/* second section starts here */
+
+.section-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-2 .brands {
+  margin: 150px 0px;
+  padding: 50px 0px;
+  border-top: 2px solid rgba(192, 204, 218, 0.2);
+  border-bottom: 2px solid rgba(192, 204, 218, 0.2);
+}
+.section-2 img {
+  margin-left: 60px;
+}
+
+/* third section starts here */
+.container-3 > h2.heading-2 {
   font-family: "PT Sans", sans-serif;
   text-align: center;
-  font-size: 32px;
-  margin-top: 100px;
+  font-size: 36px;
 }
 /* cards section with 9 product cards */
-.cards-section {
-  margin-left: 100px;
-  background-color: #ffffff;
-  width: 1100px;
+.container-3 > .cards-section {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .cards {
@@ -150,17 +167,19 @@ h2.heading-2 {
   height: 256px;
 }
 .cards h3 {
-  font-size: 20px;
-  padding: 5px 0px;
+  font-size: 28px;
+  padding: 10px 0px;
 }
 .cards > .dollar {
-  font-size: 16px;
+  font-size: 24px;
+  padding-bottom: 10px;
 }
 .cards > .dollar::before {
   content: "$ ";
 }
-.cards > p {
-  padding: 1px 0px;
+
+.cards > .rating {
+  padding-bottom: 10px;
 }
 .cards > .rating > span {
   padding-left: 5px;
@@ -171,7 +190,7 @@ h2.heading-2 {
 }
 button.more {
   margin-top: 40px;
-  margin-left: 945px;
+  margin-left: 920px;
   background: none;
   border: none;
   color: #377cbb;
@@ -187,23 +206,84 @@ button.more > .fa-arrow-right {
 button.more:hover .fa-arrow-right {
   margin-left: 5px;
 }
+/* third section ends here */
 
+/* fourth section starts here */
+.section-4 {
+  width: 1100px;
+  display: flex;
+  margin-top: 150px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-image: url(./images/video-bg.jpg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.left-section2 {
+  height: 340px;
+  padding: 30px 0px;
+  margin-left: 0px;
+}
+.left-section2 > h1.heading-2 {
+  width: 500px;
+  font-weight: 900;
+  font-size: 52px;
+  letter-spacing: 1px;
+}
+.left-section2 > p.para-2 {
+  margin-top: 30px;
+  width: 560px;
+}
+.right-section2 {
+  margin-left: 0;
+  margin-right: 0;
+}
+.right-section2 > img {
+  width: 500px;
+}
+.second-btn {
+  margin-top: 30px;
+  background-color: #ffffff;
+  color: #377cbb;
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  padding: 10px 24px;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #377cbb;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.second-btn > .fa-arrow-right {
+  color: #377cbb;
+  transition: all 0.3s ease-out;
+}
+.second-btn:hover .fa-arrow-right {
+  margin-left: 5px;
+}
+/* fourth section ends here */
+
+/* footer section start */
+.container-4 {
+  width: 100%;
+}
 footer {
-  height: 239px;
-  margin-top: 300px;
+  height: 250px;
+  margin-top: 150px;
   background-color: #171b29;
   color: #ffffff;
   text-align: center;
 }
 footer > .content {
-  position: absolute;
-  top: 40px;
-  left: 509px;
+  padding-top: 50px;
 }
 footer h2 {
   font-size: 32px;
   letter-spacing: 1px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 footer p {
   margin-bottom: 3px;
@@ -229,8 +309,108 @@ footer .contacts span.fab:hover {
 }
 /* footer section ends here */
 
-@media (max-width: 414px) {
+@media only screen and (max-width: 414px) {
   .main-container {
+    position: relative;
+    max-width: 414px;
+    margin: 0 auto;
+  }
+
+  nav,
+  .search {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  header .logo {
+    margin: 0px 35px;
+    /* margin-left: 50px; */
+  }
+
+  header > .cart {
+    margin: 0;
+    /* margin-left: 50px; */
+  }
+  .container-2 {
+    flex-flow: column-reverse;
+  }
+  .container-2 > .right-section {
+    margin: 0;
+  }
+  .container-2 > .right-section > img {
+    width: 350px;
+    height: 350px;
+  }
+  .container-2 > .left-section {
+    margin: 0;
+    width: 350px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .left-section > h1.heading-1 {
+    width: 350px;
+    height: auto;
+    /* height: 133px; */
+    font-style: normal;
+    font-weight: 900;
+  }
+  .left-section > .para-1 {
+    width: 350px;
+  }
+  .section-2 .brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-2 img {
+    margin: 0px;
+    width: 25%;
+    padding: 10px 15px;
+  }
+
+  .container-3 > .cards-section > .cards {
+    margin: 0;
+    margin-top: 30px;
+  }
+  button.more {
+    margin: 40px 0px;
+    margin-left: 230px;
+  }
+  .section-4 {
+    width: 380px;
+    height: auto;
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column-reverse;
+    border-radius: 20px;
+  }
+  .right-section2 > img {
+    width: 350px;
+  }
+  .left-section2 {
+    height: auto;
+    padding: 30px 0px;
+    margin-left: 0px;
+  }
+  .left-section2 > h1.heading-2 {
+    width: 350px;
+    font-weight: 900;
+    font-size: 52px;
+    letter-spacing: 1px;
+  }
+  .left-section2 > p.para-2 {
+    margin-top: 30px;
+    width: 350px;
+  }
+  /* .main-container {
     width: auto;
     max-width: fit-content;
   }
@@ -245,19 +425,19 @@ footer .contacts span.fab:hover {
   }
   header .logo {
     margin: 0;
-    margin-left: 70px;
+    margin-left: 50px;
   }
   header .cart {
     margin: 0;
-    margin-left: 70px;
+    margin-left: 50px;
   }
   header {
     padding: 30px 30px;
   }
-  /* navbar ends here */
+
 
   .container-2 {
-    flex-wrap: wrap-reverse;
+    flex-flow: column-reverse;
   }
   .container-2 .right-section {
     margin: 0;
@@ -320,5 +500,5 @@ footer .contacts span.fab:hover {
     font-size: 28px;
     letter-spacing: 1px;
     margin-bottom: 3px;
-  }
+  } */
 }
