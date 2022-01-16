@@ -313,6 +313,123 @@ footer .contacts span.fab:hover {
 }
 /* footer section ends here */
 
+/* responsive tablet view */
+@media only screen and (max-width: 768px) {
+  .main-container {
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  header {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 60px 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-icon {
+    width: 40px;
+    display: block;
+  }
+  .logo {
+    width: 420px;
+    padding: 0px 60px;
+    margin-right: 0px;
+  }
+  nav {
+    display: none;
+  }
+  .search,
+  .cart {
+    padding: 0px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column-reverse;
+  }
+  .container-2 > .right-section {
+    width: 600px;
+    margin-left: 85px;
+    margin-top: 50px;
+  }
+
+  .left-section > h1.heading-1 {
+    width: 600px;
+    height: 135px;
+    margin-top: 80px;
+  }
+  .left-section > .para-1 {
+    width: 600px;
+  }
+  .section-2 .brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 150px 0px;
+    padding: 50px 0px;
+  }
+  .section-2 img {
+    margin: 0px;
+    width: 20%;
+    padding: 10px 30px;
+  }
+
+  .container-3 > h2.heading-2 {
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    font-size: 36px;
+  }
+  .container-3 > .cards-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .container-3 > .cards-section > .cards {
+    margin: 25px 25px;
+  }
+  button.more {
+    margin-top: 40px;
+    margin-left: 620px;
+  }
+  .section-4 {
+    width: 768px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column-reverse;
+    background-image: url(./images/video-bg.jpg);
+    background-size: cover;
+  }
+  .right-section2 > img {
+    width: 600px;
+  }
+  .left-section2 {
+    height: 340px;
+    padding: 30px 0px;
+    margin-right: 0px;
+  }
+  .left-section2 > h1.heading-2 {
+    width: 600px;
+    font-weight: 900;
+    font-size: 52px;
+    letter-spacing: 1px;
+  }
+  .left-section2 > p.para-2 {
+    margin-top: 30px;
+    width: 600px;
+  }
+}
+
+/* responsive mobile view */
 @media only screen and (max-width: 414px) {
   .main-container {
     position: relative;
