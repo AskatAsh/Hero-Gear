@@ -107,7 +107,7 @@ button.first-btn:hover {
   background: none;
   color: #ffffff;
   font-size: 18px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 button.first-btn:hover .fa-arrow-right {
   color: #377cbb;
@@ -177,7 +177,10 @@ button.first-btn:hover .fa-arrow-right {
 .cards > .dollar::before {
   content: "$ ";
 }
-
+.dollar,
+.rating {
+  font-weight: bold;
+}
 .cards > .rating {
   padding-bottom: 10px;
 }
@@ -224,10 +227,10 @@ button.more:hover .fa-arrow-right {
 .left-section2 {
   height: 340px;
   padding: 30px 0px;
-  margin-left: 0px;
+  margin-right: 50px;
 }
 .left-section2 > h1.heading-2 {
-  width: 500px;
+  width: 560px;
   font-weight: 900;
   font-size: 52px;
   letter-spacing: 1px;
@@ -271,6 +274,7 @@ button.more:hover .fa-arrow-right {
   width: 100%;
 }
 footer {
+  font-family: "PT Sans", sans-serif;
   height: 250px;
   margin-top: 150px;
   background-color: #171b29;
@@ -398,7 +402,7 @@ footer .contacts span.fab:hover {
   .left-section2 {
     height: auto;
     padding: 30px 0px;
-    margin-left: 0px;
+    margin: 0px;
   }
   .left-section2 > h1.heading-2 {
     width: 350px;
@@ -410,95 +414,4 @@ footer .contacts span.fab:hover {
     margin-top: 30px;
     width: 350px;
   }
-  /* .main-container {
-    width: auto;
-    max-width: fit-content;
-  }
-  .menu-icon {
-    display: block;
-    width: 30px;
-    height: 30px;
-  }
-  nav,
-  .search {
-    display: none;
-  }
-  header .logo {
-    margin: 0;
-    margin-left: 50px;
-  }
-  header .cart {
-    margin: 0;
-    margin-left: 50px;
-  }
-  header {
-    padding: 30px 30px;
-  }
-
-
-  .container-2 {
-    flex-flow: column-reverse;
-  }
-  .container-2 .right-section {
-    margin: 0;
-    margin-left: 60px;
-    margin-top: 50px;
-  }
-  .container-2 .right-section > img {
-    width: 360px;
-    height: 360px;
-  }
-  .container-2 .left-section {
-    margin: 0;
-    margin-left: 30px;
-  }
-  .left-section h1.heading-1 {
-    width: 445px;
-    height: 133px;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 45px;
-    line-height: 70px;
-    color: #3a3a3a;
-  }
-  .left-section p.para-1 {
-    width: 445px;
-  }
-  h2.heading-2 {
-    width: 360px;
-    margin-top: 100px;
-    margin-left: 40px;
-  }
-  .cards-section {
-    margin-left: 74px;
-    width: 360px;
-  }
-  button.more {
-    position: inherit;
-    margin-left: 230px;
-    background: none;
-    border: none;
-    color: #377cbb;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  footer {
-    width: 600px;
-    height: 239px;
-    margin-top: 300px;
-    background-color: #171b29;
-    color: #ffffff;
-    text-align: center;
-  }
-  footer > .content {
-    position: absolute;
-    top: 30px;
-    left: 100px;
-  }
-  footer h2 {
-    font-size: 28px;
-    letter-spacing: 1px;
-    margin-bottom: 3px;
-  } */
 }
